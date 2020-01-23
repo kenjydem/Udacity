@@ -51,8 +51,8 @@ class REINFORCE(object):
         for i in range(self.num_trajectories):
 
             #Classic
-            discounts = [self.gamma**i for i in range(len(rewards[i])+1)]
-            R = sum([a*b for a,b in zip(discounts, rewards[i])])
+            #discounts = [self.gamma**i for i in range(len(rewards[i])+1)]
+            #R = sum([a*b for a,b in zip(discounts, rewards[i])])
            
             # Credit Assignement
             running_add = 0.0
